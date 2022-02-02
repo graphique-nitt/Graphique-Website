@@ -8,13 +8,17 @@ import { IntroComponent } from './components/intro/intro.component';
 import { BaseComponent } from './components/base/base.component';
 import { TeamComponent } from './components/team/team.component';
 import { SecondaryComponent } from './components/secondary/secondary.component';
+import { AboutComponent } from './components/about/about.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 
 const routes: Routes = [
   {path: '', component: IntroComponent},
   {path: 'home', component: BaseComponent},
   {path: '', component: SecondaryComponent, children: [
-  {path: 'team', component: TeamComponent}]},
+  {path: 'team', component: TeamComponent},
+  {path: 'about', component: AboutComponent},
+  {path: 'projects', component: ProjectsComponent}]},
   
   {path: '**', redirectTo: '/home'}
 ];

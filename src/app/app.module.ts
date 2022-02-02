@@ -17,6 +17,8 @@ import { TeamComponent } from './components/team/team.component';
 import { SecondaryComponent } from './components/secondary/secondary.component';
 import { HeaderSecondaryComponent } from './components/secondary/header-secondary/header-secondary.component';
 import { FooterSecondaryComponent } from './components/secondary/footer-secondary/footer-secondary.component';
+import { AboutComponent } from './components/about/about.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { FooterSecondaryComponent } from './components/secondary/footer-secondar
     TeamComponent,
     SecondaryComponent,
     HeaderSecondaryComponent,
-    FooterSecondaryComponent
+    FooterSecondaryComponent,
+    AboutComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
