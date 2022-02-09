@@ -1,0 +1,15 @@
+.massive {
+  font-family: Montserrat;
+  letter-spacing: normal;
+  font-weight: 500;
+  font-size: 10vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .massive {
+    font-family: Montserrat;
+    letter-spacing: normal;
+    font-weight: 500;
+    font-size: 12vw;
+  }
+}

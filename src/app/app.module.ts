@@ -19,6 +19,8 @@ import { HeaderSecondaryComponent } from './components/secondary/header-secondar
 import { FooterSecondaryComponent } from './components/secondary/footer-secondary/footer-secondary.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { WorkshopsComponent } from './components/workshops/workshops.component';
+import { WallpaperComponent } from './components/wallpaper/wallpaper.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { ProjectsComponent } from './components/projects/projects.component';
     HeaderSecondaryComponent,
     FooterSecondaryComponent,
     AboutComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    WorkshopsComponent,
+    WallpaperComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,7 @@ import { TeamComponent } from './components/team/team.component';
 import { SecondaryComponent } from './components/secondary/secondary.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { WorkshopsComponent } from './components/workshops/workshops.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path: '', component: SecondaryComponent, children: [
   {path: 'team', component: TeamComponent},
   {path: 'about', component: AboutComponent},
-  {path: 'projects', component: ProjectsComponent}]},
+  {path: 'projects', component: ProjectsComponent},
+  {path: 'workshops', component: WorkshopsComponent}]},
   
   {path: '**', redirectTo: '/home'}
 ];
