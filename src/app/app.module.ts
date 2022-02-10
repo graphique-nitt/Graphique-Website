@@ -12,11 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { IntroComponent } from './components/intro/intro.component';
-import { BaseComponent } from './components/base/base.component';
 import { TeamComponent } from './components/team/team.component';
-import { SecondaryComponent } from './components/secondary/secondary.component';
-import { HeaderSecondaryComponent } from './components/secondary/header-secondary/header-secondary.component';
-import { FooterSecondaryComponent } from './components/secondary/footer-secondary/footer-secondary.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { WorkshopsComponent } from './components/workshops/workshops.component';
@@ -29,11 +25,7 @@ import { WallpaperComponent } from './components/wallpaper/wallpaper.component';
     FooterComponent,
     HomeComponent,
     IntroComponent,
-    BaseComponent,
     TeamComponent,
-    SecondaryComponent,
-    HeaderSecondaryComponent,
-    FooterSecondaryComponent,
     AboutComponent,
     ProjectsComponent,
     WorkshopsComponent,

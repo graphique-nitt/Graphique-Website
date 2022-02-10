@@ -425,3 +425,9 @@ a:focus-visible {
     opacity: 0;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  #snackbar {
+    margin-left: -140px;
+  }
+}
