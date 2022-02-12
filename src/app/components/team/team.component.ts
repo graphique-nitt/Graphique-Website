@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GoogleSheetsDbService } from 'ng-google-sheets-db';
 import { Character, characterAttributesMapping } from './character.model';
-import { Alumni, alumniAttributesMapping } from './Alumni.model';
+import { Alumni, alumniAttributesMapping } from './alumni.model';
 import { Observable } from 'rxjs';
 
 
@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 })
 export class TeamComponent implements OnInit {
   characters$: Observable<Character[]>;
-  alumnis$: Observable<Character[]>;
+  alumnis$: Observable<Alumni[]>;
 
   name:string;
   about:string;
