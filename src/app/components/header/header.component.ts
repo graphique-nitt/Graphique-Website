@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  classvalue:string;
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
+    console.log(this.router.url)
+    if(this.router.url === "/wallpapers")
+    {
+      this.classvalue = "fixed-top"
+    } 
+
+    else{
+      this.classvalue = "fixed-top text-white"
+    }
   }
 
 }
