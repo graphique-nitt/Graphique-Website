@@ -2,7 +2,7 @@ export const wallpaperAttributesMapping = {
   id: 'Wallpaper ID',
   wallpapername: 'Wallpaper Name',
   creatorname: 'Creator',
-  username: "Username",
+  username: "Instagram Username",
   wallpaper: 'Wallpaper',
   };
   

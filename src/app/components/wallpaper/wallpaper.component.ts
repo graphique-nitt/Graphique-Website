@@ -16,6 +16,7 @@ export class WallpaperComponent implements OnInit {
   creatorname: string;
   username: string;
   wallpaper: string;
+  oldURL= "hameedthebosssss"
 
   constructor(private googleSheetsDbService: GoogleSheetsDbService) { }
 
@@ -24,6 +25,20 @@ export class WallpaperComponent implements OnInit {
       '1_NhTrKqZ7IGkHcrmkLq0g2B91iE6pdI4GaIgq0xxOpY', 'Details', wallpaperAttributesMapping, 'Active');
       console.log(this.wallpapers$);
 
+  }
+
+  //I know I implemented a weird logic. I was lazy!
+  transfer(url:string)
+  {
+    this
+    if(this.oldURL === url)
+    {
+      window.open(url, "_blank");
+      this.oldURL= "hameedthebosssss";
+    }
+    else{
+      this.oldURL=url;
+    }
   }
   
 }

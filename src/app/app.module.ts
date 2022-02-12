@@ -13,7 +13,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { TeamComponent } from './components/team/team.component';
-import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { WorkshopsComponent } from './components/workshops/workshops.component';
 import { WallpaperComponent } from './components/wallpaper/wallpaper.component';
@@ -26,7 +25,6 @@ import { WallpaperComponent } from './components/wallpaper/wallpaper.component';
     HomeComponent,
     IntroComponent,
     TeamComponent,
-    AboutComponent,
     ProjectsComponent,
     WorkshopsComponent,
     WallpaperComponent

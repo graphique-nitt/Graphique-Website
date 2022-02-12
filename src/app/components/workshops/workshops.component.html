@@ -1,2 +1,71 @@
 <app-header></app-header>
+<main>
+    <section class="pt-0">
+      <div class="jumbotron jumbotron-fluid vh-75 d-flex align-items-end bg-dark text-white">
+        <div class="bg o-7" style="background-image:url(images/slide2.png);"></div>
+        <div class="container">
+          <div class="row py-6">
+            <div class="col-sm-10 offset-sm-2">
+              <h1 class="massive in-top"><span class="d-block">Workshops</span><span class="d-block">& Events</span></h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 offset-sm-2">
+              <h3 class="in-top">Discipline as an inevitable key component</h3>
+            </div>
+            <div class="col-sm-5">
+              <p class="in-top">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container py-6">
+        <div class="row">
+          <div class="offset-sm-2 col-sm-8">
+            <h3>Graphique Bootcamp</h3>
+            <img class="w-100 img-fluid my-5" alt="Neoto - Creative Studio Portfolio Template" src="assets/images/project2.jpg">
+            <p style="margin-bottom: 150px;">Do quirky designs, appealing artworks and inventive ideas intrigue you? Are you one to perk up in domain like Graphic Design, Digital art, 3D & MoGraph and UI/UX Design? If you are fascinated by the subtle strokes of creativity in design, then we are giving you an oppurtunity to learn what we do at Graphique.
+
+                A designer’s greatest attribute is their desire to learn and create. If you have an interest towards art and have a creative side, we welcome you to the Graphique Bootcamp! A fortnight of learning, practicing, designing, editing, modeling and more! We at Graphique are excited to help you broaden your creative horizons, and assist you in unleashing your inner designer. The Bootcamp is a four-week long training process where we provide tutorial videos, assist you with tasks. On successful completion, you will be a receive an official certification from us!</p>
+            
+            <h3>Chroma</h3>
+            <img class="w-100 img-fluid my-5" alt="Neoto - Creative Studio Portfolio Template" src="assets/images/project2.jpg">
+            <p>Chroma by Graphique is an online Art Contest exclusively for the freshers of NIT Trichy. Get your creative juices flowing out of bounds for a chance to reign as the best and win Rs. 2000 in prizes.
+
+                Chroma is open to both traditional artists and digital artists. With the learning resources provided during registration, this is the perfect opportunity for amateur artists to venture into digital art and for experienced participants to hone their skills further.</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="container-fluid" data-aos="zoom-in-up" *ngIf="workshops$ | async as workshops;">
+        <div class="grid gallery" >
+          <div class="grid-sizer"></div>
+          <div class="row- mx-0 pb-5 " >
+            <div class="col-sm-12 col-12 px-0" >
+          <div style="margin: 0 auto; text-align: center;" class="card bg-dark text-white hoverable grid-item col-6 col-sm-3" *ngFor="let workshop of workshops"><img class="card-img" alt="Neoto - Creative Studio Portfolio Template" src={{workshop.artwork}}>
+            <div style="margin: 0 auto; text-align: center;"class="card-img-overlay" >
+              <div class="card-title">
+                <div class="name">{{workshop.creatorname}}</div>
+                <div class="title">{{workshop.category}}</div>
+                
+              </div>
+        </div>
+          </div>
+          
+        </div>
+          </div>
+      
+        </div>
+      </div>
+
+      <div class="container py-6">
+        <div class="row">
+          <div class="offset-sm-2 col-sm-8">
+            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 <app-footer></app-footer>
