@@ -10,17 +10,19 @@ import { WallpaperComponent } from './components/wallpaper/wallpaper.component';
 
 
 const routes: Routes = [
-  {path: '', component: IntroComponent},
+  {path: '', component: HomeComponent},
   {path: 'team', component: TeamComponent},
   {path: 'home', component: HomeComponent},
   {path: 'projects', component: ProjectsComponent},
   {path: 'workshops', component: WorkshopsComponent}, 
   {path: 'wallpapers', component: WallpaperComponent}, 
-  {path: '**', redirectTo: '/home'}
+  {path: '**', redirectTo: 'home'}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, {onSameUrlNavigation: 'reload'})
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

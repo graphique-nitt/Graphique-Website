@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-intro',
@@ -9,13 +10,14 @@ export class IntroComponent implements OnInit {
 
   entered=false;
   
-  constructor() { }
+  constructor(private _router: Router){}
 
   ngOnInit(): void {
   }
   toggleEnter(){
-    console.log("toggleEnter Triggered")
-    this.entered=true;
+    console.log("Welcome :)")
+    this._router.navigate(['home']);
+
   }
 
 }
