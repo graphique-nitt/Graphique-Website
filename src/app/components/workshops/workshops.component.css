@@ -1,0 +1,17 @@
+.chroma {
+  width: 20%;
+}
+.map {
+  width: "100%";
+  height: "200";
+}
+
+@media only screen and (max-width: 768px) {
+  .chroma {
+    width: 60%;
+  }
+  .map {
+    width: "100%";
+    height: "200";
+  }
+}

@@ -3,6 +3,7 @@ export const workshopAttributesMapping = {
   creatorname: 'Creator',
   category: "Category",
   artwork: 'Artwork',
+  prize: 'Prize',
   };
   
   export interface Workshop {
@@ -10,5 +11,6 @@ export const workshopAttributesMapping = {
     creatorname: string,
     category: string,
     artwork: string,
+    prize: string,
   }
   

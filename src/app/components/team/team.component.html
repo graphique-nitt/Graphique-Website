@@ -1,7 +1,6 @@
 <app-header></app-header>
 
 <div class="modal" *ngIf="displayModal">	
-    <div class="close" (click)="closeModal()"></div>	
     <div class="modal-wrap">	
       <img src={{this.photo}} alt="">	
       <h4 style="text-align: center; margin-top: 10px; margin-bottom: -10px;">{{this.name}}</h4>  
@@ -16,7 +15,11 @@
             <li><a href={{this.website}}><i class="fab fa fa-globe" target="blank"></i></a></li>
         </ul>
     </div>
-    </div>	
+    
+    </div>
+    <div (click)="closeModal()" class="close">
+          <a style="font-family: Montserrat; color: white; font-size: 18px;"> Close</a>
+      </div>	
   		          		
 </div>
 
@@ -34,7 +37,7 @@
     </div>
 
 
-    <div class="tabs">
+    <div class="tabs" style="margin-bottom: 150px;">
   
         <input type="radio" id="tab1" name="tab-control" checked (click)="displayCurrent()">
         <input type="radio" id="tab2" name="tab-control" (click)="displayAlumni()">
@@ -53,7 +56,7 @@
         <div class="at-grid" data-column="4" *ngIf="characters$ | async as characters;">
             
           <div class="at-column" *ngFor="let character of characters">
-            <div class="at-user">
+            <div class="at-user" (click)="showModal(character.name, character.about, character.designation, character.photo, character.instagram, character.behance, character.linkedin, character.website)">
               <div class="at-user__avatar" (click)="showModal(character.name, character.about, character.designation, character.photo, character.instagram, character.behance, character.linkedin, character.website)"><img src={{character.photo}}/></div>
               <div class="at-user__name" (click)="showModal(character.name, character.about, character.designation, character.photo, character.instagram, character.behance, character.linkedin, character.website)">{{ character.name }}</div>
               <div class="at-user__title" (click)="showModal(character.name, character.about, character.designation, character.photo, character.instagram, character.behance, character.linkedin, character.website)">{{ character.designation }}</div>

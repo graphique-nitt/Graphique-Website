@@ -96,6 +96,11 @@
   transform: rotate(360deg);
 }
 
+.map {
+  width: "100px";
+  height: "200";
+}
+
 @media only screen and (max-width: 768px) {
   .massive2 {
     font-family: Montserrat;
@@ -105,5 +110,9 @@
   }
   .corrector {
     margin-top: 1200px;
+  }
+  .map {
+    width: "1000px";
+    height: "200";
   }
 }

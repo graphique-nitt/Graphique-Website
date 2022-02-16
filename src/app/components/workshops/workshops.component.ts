@@ -16,6 +16,7 @@ export class WorkshopsComponent implements OnInit {
   creatorname: string;
   category: string;
   artwork: string;
+  prize:string;
 
   constructor(private googleSheetsDbService: GoogleSheetsDbService) { }
 

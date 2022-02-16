@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GoogleSheetsDbService } from 'ng-google-sheets-db';
 import { Project, projectAttributesMapping } from './project.model';
+import { Router } from '@angular/router';
 
 import { Character, characterAttributesMapping } from './character.model';
 import { Observable } from 'rxjs';
@@ -14,6 +15,7 @@ import { Observable } from 'rxjs';
 export class HomeComponent implements OnInit {
   characters$: Observable<Character[]>;
   projects$: Observable<Project[]>;
+  entered=false;
 
   
   name:string;
@@ -25,7 +27,7 @@ export class HomeComponent implements OnInit {
   linkedin:string;
   website:string;
 
-  constructor(private googleSheetsDbService: GoogleSheetsDbService) { }
+  constructor(private googleSheetsDbService: GoogleSheetsDbService, private _router: Router) { }
 
   ngOnInit(): void {
    this.characters$ = this.googleSheetsDbService.getActive<Character>(
@@ -35,4 +37,11 @@ export class HomeComponent implements OnInit {
     '12C6fZMh6tU6fyU9mXaMrPZBV6lvZbBAIjDj-9kAU3tY', 'Details', projectAttributesMapping, 'Active');
     console.log(this.projects$);
   }
+  toggleEnter(){
+    console.log("Welcome :)")
+    this._router.navigate(['home']);
+
+  }
+
+
 }

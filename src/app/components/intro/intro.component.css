@@ -18,3 +18,39 @@
   top: 10px;
   background: salmon;
 }
+#overlap {
+  position: absolute;
+  background-color: transparent;
+  display: block;
+  border-radius: 54px;
+  width: 40px;
+  height: 60px;
+  position: absolute;
+  left: calc(50% - 40px / 2);
+  top: calc(50% - 60px / 2);
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  z-index: 2;
+}
+#overlap1 {
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  left: 0px;
+  padding: 0px 0px 0px 0px;
+  height: 38%;
+  width: 100%;
+  z-index: 2;
+}
+#overlap2 {
+  position: absolute;
+  background-color: transparent;
+  top: 62%;
+  left: 0px;
+  padding: 0px 0px 0px 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}

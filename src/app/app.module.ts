@@ -16,6 +16,10 @@ import { TeamComponent } from './components/team/team.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { WorkshopsComponent } from './components/workshops/workshops.component';
 import { WallpaperComponent } from './components/wallpaper/wallpaper.component';
+import { ContactComponent } from './components/contact/contact.component';
+import {NgParticlesModule} from "ng-particles";
+
+
 
 @NgModule({
   declarations: [
@@ -27,12 +31,14 @@ import { WallpaperComponent } from './components/wallpaper/wallpaper.component';
     TeamComponent,
     ProjectsComponent,
     WorkshopsComponent,
-    WallpaperComponent
+    WallpaperComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgParticlesModule 
   ],
   providers: [
     {

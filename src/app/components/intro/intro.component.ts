@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,7 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./intro.component.css']
 })
 export class IntroComponent implements OnInit {
-
+  @HostListener('window:blur', ['$event'])
+  onWindowBlur(event: any): void {
+    console.log('iframe clicked');
+  }
   entered=false;
   
   constructor(private _router: Router){}
@@ -16,8 +19,7 @@ export class IntroComponent implements OnInit {
   }
   toggleEnter(){
     console.log("Welcome :)")
-    this._router.navigate(['home']);
-
+    window.location.href="/home"
   }
 
 }
