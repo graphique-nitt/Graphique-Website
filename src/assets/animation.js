@@ -5733,7 +5733,6 @@ var Intro = /*#__PURE__*/function () {
       DOM.enterCtrl.addEventListener('mouseleave', this.enterMouseLeaveEv);
 
       this.enterClickEv = function () {
-        return _this.enter();
       };
 
       DOM.enterCtrl.addEventListener('click', this.enterClickEv);

@@ -1,0 +1,23 @@
+<header class="fixed-top text-white" style="z-index: 2;">
+    <div class="navbar"><a class="navbar-brand" routerLink="/home"> <img class="default" alt="Graphique" src="assets/logoblack.png"><img class="inverted" alt="Graphique" src="assets/logowhite.png"></a>
+      <button class={{cssvalue}} #navs type="button" data-toggle="collapse" [attr.data-target]="'#' + 'navbar'"><span class="toggle-label">Menu</span><span class="toggle-label-close">Close</span><span class="toggle-icon"><span class="line"></span><span class="line"></span></span></button>
+   </div>
+    <ul id="nav">
+      <!--<li class="nav-item active"><a class="nav-link" href="/home">Home</a></li>-->
+      <li class="nav-item active"><a class="nav-link" routerLink="/about" (click)="reset()">About Us</a></li>
+      <li class="nav-item active"><a class="nav-link" routerLink="/projects" (click)="reset()">Projects</a></li>
+      <li class="nav-item active"><a class="nav-link" routerLink="/workshops" (click)="reset()">Workshops & Events</a></li>
+      <li class="nav-item active"><a class="nav-link" routerLink="/members" (click)="reset()">Members</a></li>
+      <li class="nav-item active"><a class="nav-link" routerLink="/wallpapers" (click)="reset()">Wallpapers</a></li>
+     <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Services</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/wallpapers">Wallpapers</a>
+          <a class="dropdown-item" href="/services.html">Logo Achrives</a>
+        </div>
+     
+      </li> -->
+      <li class="nav-item active"><a class="nav-link" routerLink="/contact"  (click)="reset()">Contact</a></li>
+    </ul>
+  </header>
+
+  

@@ -19,7 +19,6 @@ export class IntroComponent implements OnInit {
   }
   toggleEnter(){
     console.log("Welcome :)")
-    window.location.href="/home"
-  }
+    this._router.navigate(['home']);  }
 
 }

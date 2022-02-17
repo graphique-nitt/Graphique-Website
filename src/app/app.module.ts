@@ -8,16 +8,17 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './components/main-website/header/header.component';
+import { FooterComponent } from './components/main-website/footer/footer.component';
+import { HomeComponent } from './components/main-website/home/home.component';
 import { IntroComponent } from './components/intro/intro.component';
-import { TeamComponent } from './components/team/team.component';
-import { ProjectsComponent } from './components/projects/projects.component';
-import { WorkshopsComponent } from './components/workshops/workshops.component';
-import { WallpaperComponent } from './components/wallpaper/wallpaper.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { TeamComponent } from './components/main-website/team/team.component';
+import { ProjectsComponent } from './components/main-website/projects/projects.component';
+import { WorkshopsComponent } from './components/main-website/workshops/workshops.component';
+import { WallpaperComponent } from './components/main-website/wallpaper/wallpaper.component';
+import { ContactComponent } from './components/main-website/contact/contact.component';
 import {NgParticlesModule} from "ng-particles";
+import { MainWebsiteComponent } from './components/main-website/main-website.component';
 
 
 
@@ -32,7 +33,8 @@ import {NgParticlesModule} from "ng-particles";
     ProjectsComponent,
     WorkshopsComponent,
     WallpaperComponent,
-    ContactComponent
+    ContactComponent,
+    MainWebsiteComponent
   ],
   imports: [
     BrowserModule,

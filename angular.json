@@ -29,7 +29,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/main.bundle.css"
+              "src/styles.css"
             ],
             "scripts": [
               "src/main.bundle.js"

@@ -1,0 +1,114 @@
+
+<div class="modal" *ngIf="displayModal" >	
+  <div id="overlap1" (click)="closeModal()"></div>
+
+    <div class="modal-wrap ">	
+      <img src={{this.photo}} alt="">	
+      <h4 style="text-align: center; margin-top: 10px; margin-bottom: -10px;">{{this.name}}</h4>  
+      <div class="at-user__title" style="text-align: center; margin-top: 5px; margin-bottom: -10px;">{{ this.designation }}</div>
+      
+      <p style="text-align: center; margin-bottom: -20px;">{{this.about}}</p>	  
+      <div class="social-menu-modal">
+        <ul>
+          <li *ngIf="this.instagram !== 'N/A'"><a href={{this.instagram}} target="blank"><i class="fab fa fa-instagram"></i></a></li>
+          <li *ngIf="this.behance !== 'N/A'"><a href={{this.behance}} target="blank"><i class="fab fa fa-behance"></i></a></li>
+          <li *ngIf="this.linkedin !== 'N/A'"><a href={{this.linkedin}} target="blank"><i class="fab fa fa-linkedin"></i></a></li>
+          <li *ngIf="this.website !== 'N/A'"><a href={{this.website}}><i class="fab fa fa-globe" target="blank"></i></a></li>
+        </ul>
+    </div>
+    
+    </div>
+    <!--<div (click)="closeModal()" class="close">
+          <a style="font-family: Montserrat; color: white; font-size: 18px;"> Close</a>
+      </div>	-->
+  		          		
+</div>
+
+<main>
+  <section class="pt-0" style="margin-bottom:-500px">
+
+    <div class="jumbotron jumbotron-fluid vh-75 d-flex align-items-center bg-dark text-white">
+      <div class="bg" style="background-image:url(assets/images/members.jpg);"></div>
+      <div class="container text-center">
+        <div class="row justify-content-md-center">
+          <div class="col-sm-7">
+            <h1 class="massive in-left">Our Team</h1>
+            <p class="in-top o-7">Male : Naan pizhai
+              Nee mazhalai
+              Enakkul nee irundhaal
+              Adhu thavarae illai
+              
+              Male : Nee ilai
+              Naan paruva mazhai
+              siru siru thuliyaai
+              Vilum tharunam illai
+              
+              Female : Aazhiyil irundhu
+              Alasi eduthaenae
+              Adaikalam amaikka
+              Thagundhavan dhaanae</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="tabs" style="margin-bottom: 150px;">
+  
+        <input type="radio" id="tab1" name="tab-control" checked (click)="displayCurrent()">
+        <input type="radio" id="tab2" name="tab-control" (click)="displayAlumni()">
+        <ul>
+          <li title="Current Members"><label for="tab1" role="button"><img src="https://img.icons8.com/color/24/000000/cool--v1.png"/><br><span> Current Members</span></label></li>
+          <li title="Delivery Contents"><label for="tab2" role="button"><img src="https://img.icons8.com/color/24/000000/graduation-cap.png"/><br><span> Veterans & Alumni</span></label></li>
+        </ul>
+        
+        <div class="slider"><div class="indicator"></div></div>
+           
+      </div>
+      
+      <div class="container2" *ngIf='showCurrent'>
+        <div class="at-grid" data-column="4" *ngIf="characters$ | async as characters;">
+            
+          <div class="at-column" *ngFor="let character of characters">
+            <div class="at-user" (click)="showModal(character.name, character.about, character.designation, character.photo, character.instagram, character.behance, character.linkedin, character.website)">
+              <div class="at-user__avatar" (click)="showModal(character.name, character.about, character.designation, character.photo, character.instagram, character.behance, character.linkedin, character.website)"><img src={{character.photo}}/></div>
+              <div class="at-user__name" (click)="showModal(character.name, character.about, character.designation, character.photo, character.instagram, character.behance, character.linkedin, character.website)">{{ character.name }}</div>
+              <div class="at-user__title" (click)="showModal(character.name, character.about, character.designation, character.photo, character.instagram, character.behance, character.linkedin, character.website)">{{ character.designation }}</div>
+             
+              <div class="social-menu">
+                <ul>
+                  <li *ngIf="character.instagram !== 'N/A'"><a href={{character.instagram}} target="blank"><i class="fab fa fa-instagram"></i></a></li>
+                  <li *ngIf="character.behance !== 'N/A'"><a href={{character.behance}} target="blank"><i class="fab fa fa-behance"></i></a></li>
+                  <li *ngIf="character.linkedin !== 'N/A'"><a href={{character.linkedin}} target="blank"><i class="fab fa fa-linkedin"></i></a></li>
+                  <li *ngIf="character.website !== 'N/A'"><a href={{character.website}}><i class="fab fa fa-globe" target="blank"></i></a></li>
+                </ul>
+            </div>
+        </div>
+          </div>
+        </div>
+</div>
+
+<div class="container2" *ngIf='showAlumni'>
+    <div class="at-grid" data-column="4" *ngIf="alumnis$ | async as alumnis;">
+        
+      <div class="at-column" *ngFor="let alumni of alumnis">
+        <div class="at-user">
+          <div class="at-user__avatar" (click)="showModal(alumni.name, alumni.about, alumni.designation, alumni.photo, alumni.instagram, alumni.behance, alumni.linkedin, alumni.website)"><img src={{alumni.photo}}/></div>
+          <div class="at-user__name" (click)="showModal(alumni.name, alumni.about, alumni.designation, alumni.photo, alumni.instagram, alumni.behance, alumni.linkedin, alumni.website)">{{ alumni.name }}</div>
+          <div class="at-user__title" (click)="showModal(alumni.name, alumni.about, alumni.designation, alumni.photo, alumni.instagram, alumni.behance, alumni.linkedin, alumni.website)">{{ alumni.designation }}</div>
+         
+          <div class="social-menu">
+            <ul>
+                <li *ngIf="alumni.instagram !== 'N/A'"><a href={{alumni.instagram}} target="blank"><i class="fab fa fa-instagram"></i></a></li>
+                <li *ngIf="alumni.behance !== 'N/A'"><a href={{alumni.behance}} target="blank"><i class="fab fa fa-behance"></i></a></li>
+                <li *ngIf="alumni.linkedin !== 'N/A'"><a href={{alumni.linkedin}} target="blank"><i class="fab fa fa-linkedin"></i></a></li>
+                <li *ngIf="alumni.website !== 'N/A'"><a href={{alumni.website}}><i class="fab fa fa-globe" target="blank"></i></a></li>
+            </ul>
+        </div>
+    </div>
+      </div>
+    </div>
+</div>
+
+</section>
+  </main>
