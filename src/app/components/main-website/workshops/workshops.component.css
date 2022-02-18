@@ -5,6 +5,9 @@
   width: "100%";
   height: "200";
 }
+.headtext {
+  font-size: 120px;
+}
 
 @media only screen and (max-width: 768px) {
   .chroma {
@@ -13,5 +16,8 @@
   .map {
     width: "100%";
     height: "200";
+  }
+  .headtext {
+    font-size: 60px;
   }
 }

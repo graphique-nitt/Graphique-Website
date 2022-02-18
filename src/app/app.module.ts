@@ -19,6 +19,7 @@ import { WallpaperComponent } from './components/main-website/wallpaper/wallpape
 import { ContactComponent } from './components/main-website/contact/contact.component';
 import {NgParticlesModule} from "ng-particles";
 import { MainWebsiteComponent } from './components/main-website/main-website.component';
+import { ErrorPageComponent } from './components/error-page/error-page.component';
 
 
 
@@ -34,7 +35,8 @@ import { MainWebsiteComponent } from './components/main-website/main-website.com
     WorkshopsComponent,
     WallpaperComponent,
     ContactComponent,
-    MainWebsiteComponent
+    MainWebsiteComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,

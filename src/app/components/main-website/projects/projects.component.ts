@@ -23,7 +23,7 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
     this.projects$ = this.googleSheetsDbService.getActive<Project>(
       '12C6fZMh6tU6fyU9mXaMrPZBV6lvZbBAIjDj-9kAU3tY', 'Details', projectAttributesMapping, 'Active');
-      console.log(this.projects$);
+      
 
   }
   

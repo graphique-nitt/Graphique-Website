@@ -5,7 +5,7 @@
   overflow: hidden;
   height: 100%;
   width: 100%;
-  z-index: 4;
+  z-index: 91;
 }
 
 .middle {
@@ -32,7 +32,7 @@
   font-weight: 500;
   cursor: pointer;
   padding: 0;
-  z-index: 4;
+  z-index: 91;
 }
 #overlap1 {
   position: absolute;
@@ -42,7 +42,7 @@
   padding: 0px 0px 0px 0px;
   height: 38%;
   width: 100%;
-  z-index: 4;
+  z-index: 91;
 }
 #overlap2 {
   position: absolute;
@@ -52,5 +52,5 @@
   padding: 0px 0px 0px 0px;
   height: 38%;
   width: 100%;
-  z-index: 4;
+  z-index: 91;
 }

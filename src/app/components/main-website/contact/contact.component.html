@@ -9,35 +9,13 @@
         </div>
         <div class="row mt-5">
           <div class="col-lg-5 offset-lg-2">
-            <p class="in-top">Gaanda kannazhagi
-              Look-u vittu kick-u yethum
-              Muththu palazhagi
-              Sodi sera vaadi
-              
-              
-              Gaanda kannazhaga
-              Takkunu thaan thatti thookkum
-              Muththu palazhaga
-              Muththam onnu thaada
-              
-              
-              Ponna paatha manna paakkum
-              Sangathoda leader-u naan
-              Unnai paatha pinne atha resign pannene
-              
-              
-              Kadhal enum twitter-u’la
-              Aalillama kaathu iruthen
-              Unnai follow pannathala
-              Trending aanene
-              
-              </p>
+            <p class="in-top">We are here to assist you 24/7. Please leave us a message if you want to contact us in case of any queries, suggestions, disputes, etc. We will get back to you as soon as possible!</p>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
-            <h2 class="mt-5">Write To Us</h2>
-            <form class="mt-4 mb-n10">
+            <h2 *ngIf="this.id==='nope'" class="mt-5">Write To Us</h2>
+            <form name="RegForm" *ngIf="this.id==='nope'"action="https://formsubmit.co/7291d68f58ab89c49e3a656a1f519d1f" method="POST" class="mt-4 mb-n10">
               <div class="form-group">
                 <input class="form-control" id="name" type="text" placeholder="Full Name">
               </div>
@@ -47,12 +25,13 @@
               <div class="form-group">
                 <textarea class="form-control" id="message" rows="8" placeholder="Message"></textarea>
               </div>
-              <div style="text-align: center;  background: linear-gradient(180deg, #FF6B6B 0%, #C21F1F 100%);
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://graphique.club/contact/submitted">
+              <input type="submit" value="Submit" style="text-align: center;  background: linear-gradient(180deg, #FF6B6B 0%, #C21F1F 100%);
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-      border-radius: 5px; padding: 6px; width: fit-content;">
-          <div style="font-family: Montserrat; color: white; font-size: 12px;">Send</div>
-      </div>
+      border-radius: 5px; padding: 6px; width: fit-content; font-family: Montserrat; color: white; font-size: 12px;">
             </form>
+            <h2 *ngIf="this.id==='submitted'" class="mt-5">Thanks for contacting us! Our club members will get back to you soon...</h2>
           </div>
         </div>
       </div>
