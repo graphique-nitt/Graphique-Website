@@ -17,17 +17,18 @@
             <h2 *ngIf="this.id==='nope'" class="mt-5">Write To Us</h2>
             <form name="RegForm" *ngIf="this.id==='nope'"action="https://formsubmit.co/7291d68f58ab89c49e3a656a1f519d1f" method="POST" class="mt-4 mb-n10">
               <div class="form-group">
-                <input class="form-control" id="name" type="text" placeholder="Full Name">
+                <input class="form-control" id="name" name="name" type="text" placeholder="Full Name">
               </div>
               <div class="form-group">
-                <input class="form-control" id="email" type="email" placeholder="Email">
+                <input class="form-control" id="email" name="email" type="email" placeholder="Email">
               </div>
               <div class="form-group">
-                <textarea class="form-control" id="message" rows="8" placeholder="Message"></textarea>
+                <textarea class="form-control" id="message" name="message" rows="8" placeholder="Message"></textarea>
               </div>
+              <input type="hidden" name="_template" value="basic">
               <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_next" value="https://graphique.club/contact/submitted">
-              <input type="submit" value="Submit" style="text-align: center;  background: linear-gradient(180deg, #FF6B6B 0%, #C21F1F 100%);
+              <input type="submit" value="Submit" style="  border: none; text-align: center;  background: linear-gradient(180deg, #FF6B6B 0%, #C21F1F 100%);
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
       border-radius: 5px; padding: 6px; width: fit-content; font-family: Montserrat; color: white; font-size: 12px;">
             </form>

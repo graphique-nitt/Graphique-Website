@@ -27,7 +27,6 @@ cssvalue:string;
   }
 
   reset(){
-    console.log('Hello');
     this.namedElement.nativeElement.click();
 
 

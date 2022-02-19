@@ -20,7 +20,9 @@ import { ContactComponent } from './components/main-website/contact/contact.comp
 import {NgParticlesModule} from "ng-particles";
 import { MainWebsiteComponent } from './components/main-website/main-website.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
+import { VerifyCertComponent } from './components/verify-cert/verify-cert.component';
 
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -36,7 +38,8 @@ import { ErrorPageComponent } from './components/error-page/error-page.component
     WallpaperComponent,
     ContactComponent,
     MainWebsiteComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    VerifyCertComponent
   ],
   imports: [
     BrowserModule,

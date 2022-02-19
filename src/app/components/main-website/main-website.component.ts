@@ -9,9 +9,10 @@ import { Router } from '@angular/router';
 export class MainWebsiteComponent implements OnInit {
   showheader=true;
 
+  text = "There is nothing interesting here. But if you want some interesting stuff, check my profile 😉 \nMade with ❤️ by Hameed Ibrahim \nPresident, Graphique 2021-22. \nFollow me @hameedibrh | hameedibrh.com"
   constructor(private _router: Router) { }
   ngOnInit(): void {
-    
+    console.log(this.text);
 
   }
   
@@ -158,7 +159,7 @@ particlesOptions = {
               "height": 32
             },
             {
-              "src": "https://icons8.com/icon/bzB9vga5agBr/astronaut",
+              "src": "https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/58/000000/external-astronaut-space-vitaliy-gorbachev-flat-vitaly-gorbachev-4.png",
               "width": 32,
               "height": 32
             },
@@ -233,7 +234,7 @@ particlesOptions = {
               "height": 32
             },
             {
-              "src": "https://icons8.com/icon/bzB9vga5agBr/astronaut",
+              "src": "https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/58/000000/external-astronaut-space-vitaliy-gorbachev-flat-vitaly-gorbachev-4.png",
               "width": 32,
               "height": 32
             },

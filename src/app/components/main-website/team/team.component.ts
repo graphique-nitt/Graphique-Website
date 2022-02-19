@@ -33,7 +33,6 @@ showAlumni = false;
       '1sIzub8kRLv4vNbXhfJzC2HFl6BWYLLvvgnRcArPWhOw', 'Details', characterAttributesMapping, 'Active');
       this.alumnis$ = this.googleSheetsDbService.getActive<Character>(
         '1nZrhZsb7B0NP3pRP1I4EmsQdGKpQqoxBHbm5LkBGLcE', 'Details', alumniAttributesMapping, 'Active');
-        console.log(this.alumnis$);
   }
 
   

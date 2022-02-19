@@ -10,6 +10,7 @@ import { WallpaperComponent } from './components/main-website/wallpaper/wallpape
 import { ContactComponent } from './components/main-website/contact/contact.component';
 import { MainWebsiteComponent } from './components/main-website/main-website.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
+import { VerifyCertComponent } from './components/verify-cert/verify-cert.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
     {path: 'wallpapers', component: WallpaperComponent}, 
     {path: 'contact', component: ContactComponent},
     {path: 'contact/:id', component: ContactComponent},
+    {path: 'verify', component: VerifyCertComponent},
     {path: '404', component: ErrorPageComponent}
     ]},
     {path: '**', redirectTo: '404'}
@@ -30,7 +32,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { enableTracing: true, scrollPositionRestoration: 'enabled'  })
+    RouterModule.forRoot(routes, { enableTracing: false, scrollPositionRestoration: 'enabled'  })
   ],
   exports: [RouterModule]
 })

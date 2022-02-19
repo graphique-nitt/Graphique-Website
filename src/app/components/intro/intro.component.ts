@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
 export class IntroComponent implements OnInit {
   @HostListener('window:blur', ['$event'])
   onWindowBlur(event: any): void {
-    console.log('iframe clicked');
   }
   entered=false;
   
@@ -18,7 +17,6 @@ export class IntroComponent implements OnInit {
   ngOnInit(): void {
   }
   toggleEnter(){
-    console.log("Welcome :)")
     this._router.navigate(['home']);  }
 
 }

@@ -1,0 +1,379 @@
+.heading h1 {
+  margin: 20px 25px;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+input:focus {
+  outline: none;
+}
+.content {
+  width: 60%;
+  height: 75%;
+  background: #fff;
+  border-radius: 10px;
+  top: 50%;
+  left: 60%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: 0px 0px 20px #ff634755;
+  z-index: 100;
+  padding: 25px;
+}
+
+.resultSuccess {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 25px 30px 25px;
+}
+
+.resultFailure {
+  margin: 30px 25px 30px 25px;
+}
+
+.resultFailure button {
+  border-radius: 5px;
+  background-color: tomato;
+  border-color: #ff6347;
+  color: white;
+  letter-spacing: 0;
+  font-weight: 700;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.details {
+  float: left;
+  width: 70%;
+  margin: 30px;
+  padding-left: 30px;
+  border-left: 1px solid #0001;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.certificateContainer {
+  display: flex;
+}
+
+.certificateImage {
+  width: 28em;
+}
+
+.certificateImage img {
+  width: 100%;
+  box-shadow: 0px 2px 19px 13px rgba(0, 0, 0, 0.25);
+}
+
+.actions {
+  display: flex;
+}
+
+.share {
+  margin-left: 50px;
+}
+
+.share button {
+  margin: 0px 5px;
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  height: 50px;
+  width: 50px;
+}
+
+#loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+.download button {
+  border-radius: 5px;
+  background-color: tomato;
+  border-color: #ff6347;
+  color: white;
+  letter-spacing: 0;
+  font-weight: 700;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+.download a {
+  margin-left: 20px;
+}
+
+.download button:hover {
+  box-shadow: 0px 0px 10px #000a;
+}
+
+.download button:disabled {
+  background-color: rgb(255, 159, 143);
+  border-color: rgb(255, 159, 143);
+  cursor: not-allowed;
+}
+
+.spinner-box {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.searchSpinnerBox {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.searchingSpinner {
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0%;
+  left: 60%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 100;
+}
+.footer a,
+p {
+  letter-spacing: 0;
+  font-weight: 500;
+  color: white;
+}
+
+.subtitle {
+  color: rgb(180, 180, 180);
+}
+
+.greeenCheck {
+  color: seagreen;
+}
+.redCross {
+  color: orangered;
+}
+
+.searchForm {
+  display: flex;
+  flex-direction: row;
+}
+.searchForm input[type="text"] {
+  height: 50px;
+  border-radius: 5px;
+  width: 80%;
+  margin-left: 20px;
+  border: none;
+  padding-left: 5px;
+}
+
+.searchForm button {
+  height: 50px;
+  border-radius: 5px;
+  background-color: tomato;
+  border-color: #ff6347;
+  color: white;
+  letter-spacing: 0;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+/* Spinnner */
+
+@keyframes configure-clockwise {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes configure-xclockwise {
+  0% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(-135deg);
+  }
+  75% {
+    transform: rotate(-225deg);
+  }
+  100% {
+    transform: rotate(-315deg);
+  }
+}
+
+.configure-border-1 {
+  width: 115px;
+  height: 115px;
+  padding: 3px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: tomato;
+  animation: configure-clockwise 3s ease-in-out 0s infinite alternate;
+}
+
+.configure-border-2 {
+  width: 115px;
+  height: 115px;
+  padding: 3px;
+  left: -115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: tomato;
+  transform: rotate(45deg);
+  animation: configure-xclockwise 3s ease-in-out 0s infinite alternate;
+}
+
+.configure-core {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  /* background-color: rgb(180, 180, 180); */
+}
+
+/* mains piunner */
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes spin3D {
+  from {
+    transform: rotate3d(0.5, 0.5, 0.5, 360deg);
+  }
+  to {
+    transform: rotate3d(0deg);
+  }
+}
+
+.leo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.blue-orbit {
+  width: 165px;
+  height: 165px;
+  border: 1px solid tomato;
+  -webkit-animation: spin3D 3s linear 0.2s infinite;
+}
+
+.green-orbit {
+  width: 120px;
+  height: 120px;
+  border: 1px solid tomato;
+  -webkit-animation: spin3D 2s linear 0s infinite;
+}
+
+.red-orbit {
+  width: 90px;
+  height: 90px;
+  border: 1px solid tomato;
+  -webkit-animation: spin3D 1s linear 0s infinite;
+}
+
+.white-orbit {
+  width: 60px;
+  height: 60px;
+  border: 2px solid tomato;
+  -webkit-animation: spin3D 10s linear 0s infinite;
+}
+
+.w1 {
+  transform: rotate3D(1, 1, 1, 90deg);
+}
+
+.w2 {
+  transform: rotate3D(1, 2, 0.5, 90deg);
+}
+
+.w3 {
+  transform: rotate3D(0.5, 1, 2, 90deg);
+}
+
+.three-quarter-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #fb5b53;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.5s linear 0s infinite;
+}
+@media only screen and (max-width: 768px) {
+  .resultSuccess {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 25px 30px 25px;
+  }
+  .certificateImage {
+    width: 100%;
+  }
+
+  .details {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin: 30;
+    margin-left: -10px;
+    padding-left: none;
+    border-left: none;
+    padding-top: 30px;
+    border-top: 1px solid #0001;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .download button {
+    border-radius: 5px;
+    background-color: tomato;
+    border-color: #ff6347;
+    color: white;
+    letter-spacing: 0;
+    font-weight: 700;
+    padding: 15px;
+    margin-bottom: 25px;
+  }
+  .download a {
+    margin-left: 0;
+  }
+  .loadingText {
+    display: none;
+  }
+}

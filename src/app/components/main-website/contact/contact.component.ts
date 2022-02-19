@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router'
+import { NgForm } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router'
 
 @Component({
   selector: 'app-contact',
@@ -8,9 +9,8 @@ import { ActivatedRoute } from '@angular/router'
 })
 export class ContactComponent implements OnInit {
   id="nope";
- 
-
-  constructor(private route: ActivatedRoute) {}
+name:string;
+  constructor(private route: ActivatedRoute, private _router: Router) {}
 
   ngOnInit(): void {
     if(this.route.snapshot.paramMap.get('id') !== null )
@@ -18,6 +18,10 @@ export class ContactComponent implements OnInit {
   }
 
 
+onSubmit(){
+this.id = 'submitted'
+
+}
 
  
   

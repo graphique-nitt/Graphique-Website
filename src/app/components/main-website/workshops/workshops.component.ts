@@ -23,7 +23,6 @@ export class WorkshopsComponent implements OnInit {
   ngOnInit(): void {
     this.workshops$ = this.googleSheetsDbService.getActive<Workshop>(
       '1EeaFYXOzdOAskfpOGV0KZ-7DMr1-YI2ISJ-mEnvy05s', 'Chroma', workshopAttributesMapping, 'Active');
-      console.log(this.workshops$);
   }
 
 }

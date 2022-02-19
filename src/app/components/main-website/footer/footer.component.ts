@@ -12,7 +12,6 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
   scrollToTop() {
-    console.log('clicked')
     let scrollToTop = window.setInterval(() => {
         let pos = window.pageYOffset;
         if (pos > 0) {

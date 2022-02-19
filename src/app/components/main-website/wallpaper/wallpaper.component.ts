@@ -23,7 +23,6 @@ export class WallpaperComponent implements OnInit {
   ngOnInit(): void {
     this.wallpapers$ = this.googleSheetsDbService.getActive<Wallpaper>(
       '1_NhTrKqZ7IGkHcrmkLq0g2B91iE6pdI4GaIgq0xxOpY', 'Details', wallpaperAttributesMapping, 'Active');
-      console.log(this.wallpapers$);
 
   }
 
