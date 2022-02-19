@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   characters$: Observable<Character[]>;
   projects$: Observable<Project[]>;
   entered=false;
+  old: string;
 
   
   name:string;
@@ -41,5 +42,15 @@ export class HomeComponent implements OnInit {
 
   }
 
+  red(link: string){
+    const neww = link;
+    if(neww == this.old)
+    {
+      this.old = "";
+      window.open(link, '_blank');
 
+    }
+
+
+}
 }

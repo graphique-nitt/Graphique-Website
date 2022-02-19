@@ -19,16 +19,16 @@
         <div class="grid">
           <div class="grid-sizer col-1"></div>
           <div *ngFor="let project of projects">
-          <a *ngIf="project.name === 'Festember' || project.name === 'Pragyan' || project.name === 'Orientation'" class="grid-item col-4" target="_blank" href={{project.link}}><img alt={{project.name}} src={{project.cover}}>
-            <div class="caption p-3">
+          <a *ngIf="project.name === 'Festember' || project.name === 'Pragyan' || project.name === 'Orientation'" class="grid-item col-12 col-md-4" ><img alt={{project.name}} src={{project.cover}}>
+            <div (click)="red(project.link)" class="caption p-3">
               <div class="title"><span style="font-weight: bold; font-size: larger;">{{project.name}}<br></span><span style="font-style: italic; font-weight: lighter;">{{project.date}}<br></span><span>{{project.description}}</span></div>
             </div></a>
         </div> 
             
             
         <div *ngFor="let project of projects">
-            <a *ngIf="project.name !== 'Festember' && project.name !== 'Pragyan' && project.name !== 'Orientation'" class="grid-item col-3" target="_blank" href={{project.link}} ><img alt={{project.name}} src={{project.cover}}>
-                <div class="caption p-3">
+            <a *ngIf="project.name !== 'Festember' && project.name !== 'Pragyan' && project.name !== 'Orientation'" class="grid-item col-12 col-md-3"><img alt={{project.name}} src={{project.cover}}>
+                <div (click)="red(project.link)" class="caption p-3">
                     <div class="title"><span style="font-weight: bold; font-size: larger;">{{project.name}}<br></span><span style="font-style: italic; font-weight: lighter;">{{project.date}}<br></span><span>{{project.description}}</span></div>
                 </div></a>
           </div>
