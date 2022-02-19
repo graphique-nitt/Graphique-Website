@@ -11,7 +11,7 @@
               <div class="searchParam" style="  text-align: center;
               margin: 0 auto;" *ngIf="!isSearching && !certID"> 
                 <div class="searchForm">
-                    <input type="text" id="certId" name="certId" placeholder="Certificate ID" (keyup)="handleInputKeyUp($event)" >
+                    <input class="searchForminput" id="certId" name="certId" placeholder="Certificate ID" (keyup)="handleInputKeyUp($event)" >
                     <button (click)="searchCertificateId()"><fa-icon [icon]="['fas', 'search']"></fa-icon> Search</button>
                 </div>           
     
@@ -42,7 +42,7 @@
             <div class="spinner-box" *ngIf="!certImageLoaded">
                 <span class="loadingText"><br>Loading Certificate </span>
 
-                <div id="loading"></div>
+                <div class="loading"></div>
             </div>
             <div class="certificateContainer">
                 <img crossorigin="anonymous" id="certImg" [src]="certificateImage" ng-hide="certImageLoaded" (load)="certImageLoadedHandler()">
