@@ -27,6 +27,7 @@
   flex-wrap: wrap;
   background: #fff;
   border: 1px solid #e2e9ed;
+  height: max-content;
 }
 .at-grid[data-column="1"] .at-column {
   width: 100%;
@@ -106,20 +107,41 @@
   margin: 16px 0 0;
   opacity: 1;
 }
-@media (max-width: 800px) {
+@media (max-width: 1400px) {
+  .at-column {
+    width: 33.3333333333% !important;
+    max-width: 33.3333333333% !important;
+    min-width: 33.3333333333% !important;
+    flex-basis: 33.3333333333% !important;
+    padding-bottom: 200px;
+  }
+}
+@media (max-width: 900px) {
   .at-column {
     width: 50% !important;
     max-width: 50% !important;
     min-width: 50% !important;
     flex-basis: 50% !important;
+    padding-bottom: 50px;
   }
 }
-@media (max-width: 600px) {
+
+@media (max-width: 700px) {
   .at-column {
     width: 100% !important;
     max-width: 100% !important;
     min-width: 100% !important;
     flex-basis: 100% !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .at-column {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    flex-basis: 100% !important;
+    height: 400px;
   }
 }
 .at-user {
@@ -194,10 +216,6 @@ body {
   transform-origin: top center;
   transform: scale(0.8);
   height: max-content;
-}
-
-.full-height {
-  min-height: 100vh;
 }
 
 [type="checkbox"]:checked,

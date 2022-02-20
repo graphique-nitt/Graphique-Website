@@ -12,35 +12,36 @@ import { Router } from '@angular/router';
 export class ProjectsComponent implements OnInit {
   projects$: Observable<Project[]>;
 old: string;
-counter: number;
   number: string;
   name: string;
   date: string;
   description: string;
   link: string;
   cover: string;
+  proj: string;
 
     constructor(private googleSheetsDbService: GoogleSheetsDbService, private _router: Router) { }
 
   ngOnInit(): void {
     this.projects$ = this.googleSheetsDbService.getActive<Project>(
       '12C6fZMh6tU6fyU9mXaMrPZBV6lvZbBAIjDj-9kAU3tY', 'Details', projectAttributesMapping, 'Active');
-      
+  }
+
+  red(){
+  
+      window.open(this.link, '_blank');
 
   }
 
-  red(link: string){
-    const neww = link;
-    if(neww == this.old)
-    {
-      this.old = "";
-      window.open(link, '_blank');
+  showSnack(link: string, project: string){
+    this.link=link;
+    this.proj=project;
 
-    }
+     var x = document.getElementById("snackbar");
 
-    else{
-      this.old = neww;
-    }
+x.className = "show";
+
+setTimeout(function(){ x.className = x.className.replace("show", ""); }, 4000);
   }
   
 

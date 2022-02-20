@@ -1,4 +1,6 @@
 <main>
+  <div (click)="red()" id="snackbar"><b></b>Tap here to see "{{ proj }}"</div>
+
     <div class="jumbotron jumbotron-fluid vh-75 d-flex align-items-center bg-dark text-white">
         <div class="bg" style="background-image:url(assets/images/projects.jpg);"></div>
         <div class="container text-center">
@@ -20,7 +22,7 @@
           <div class="grid-sizer col-1"></div>
           <div *ngFor="let project of projects">
           <a *ngIf="project.name === 'Festember' || project.name === 'Pragyan' || project.name === 'Orientation'" class="grid-item col-12 col-md-4" ><img alt={{project.name}} src={{project.cover}}>
-            <div (click)="red(project.link)" class="caption p-3">
+            <div (click)="showSnack(project.link, project.name)" class="caption p-3">
               <div class="title"><span style="font-weight: bold; font-size: larger;">{{project.name}}<br></span><span style="font-style: italic; font-weight: lighter;">{{project.date}}<br></span><span>{{project.description}}</span></div>
             </div></a>
         </div> 
@@ -28,7 +30,7 @@
             
         <div *ngFor="let project of projects">
             <a *ngIf="project.name !== 'Festember' && project.name !== 'Pragyan' && project.name !== 'Orientation'" class="grid-item col-12 col-md-3"><img alt={{project.name}} src={{project.cover}}>
-                <div (click)="red(project.link)" class="caption p-3">
+                <div (click)="showSnack(project.link, project.name)" class="caption p-3">
                     <div class="title"><span style="font-weight: bold; font-size: larger;">{{project.name}}<br></span><span style="font-style: italic; font-weight: lighter;">{{project.date}}<br></span><span>{{project.description}}</span></div>
                 </div></a>
           </div>
