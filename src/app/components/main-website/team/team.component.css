@@ -1,6 +1,9 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 @import "https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,400";
 
+.midtext {
+  max-width: 70%;
+}
 #overlap1 {
   position: absolute;
   background-color: transparent;
@@ -133,6 +136,9 @@
     min-width: 100% !important;
     flex-basis: 100% !important;
   }
+  .midtext {
+    max-width: 90%;
+  }
 }
 
 @media (max-width: 400px) {
@@ -142,6 +148,9 @@
     min-width: 100% !important;
     flex-basis: 100% !important;
     height: 400px;
+  }
+  .midtext {
+    max-width: 90%;
   }
 }
 .at-user {
