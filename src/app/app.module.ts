@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { API_KEY, GoogleSheetsDbService } from 'ng-google-sheets-db';
 
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -23,6 +23,7 @@ import { ErrorPageComponent } from './components/error-page/error-page.component
 import { VerifyCertComponent } from './components/verify-cert/verify-cert.component';
 
 import { FormsModule } from '@angular/forms';
+import { NetworkInterceptor } from './network.interceptor';
 
 
 @NgModule({
@@ -45,13 +46,20 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgParticlesModule 
+    NgParticlesModule,
+    HttpClientModule 
   ],
   providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: NetworkInterceptor,
+      multi: true,
+    },
     {
       provide: API_KEY,
       useValue: 'AIzaSyCgZkjIqiX_e3HYhV5u_x1GT56aXD46moI',
     },
+
     GoogleSheetsDbService
   ],
   bootstrap: [AppComponent]

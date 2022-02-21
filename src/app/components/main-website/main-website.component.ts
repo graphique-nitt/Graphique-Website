@@ -8,11 +8,9 @@ import { Router } from '@angular/router';
 })
 export class MainWebsiteComponent implements OnInit {
   showheader=true;
-
-  text = "There is nothing interesting here. But if you want some interesting stuff, check my profile 😉 \nMade with ❤️ by Hameed Ibrahim \nPresident, Graphique 2021-22. \nFollow me @hameedibrh | hameedibrh.com"
   constructor(private _router: Router) { }
   ngOnInit(): void {
-    console.log(this.text);
+    console.log('Hey there, lurker. %c Made with ❤️ by Hameed Ibrahim → https://hameedibrh.com & YLP → https://yagneshlp.me', 'background: black; color: white; padding: 1ch 2ch; border-radius: 2rem;');
 
   }
   

@@ -11437,127 +11437,127 @@ a.text-dark:focus {
   font-family: "Inter";
   font-style: normal;
   font-weight: 100;
-  src: url(fonts/0f7dc50bd628fe0fc768282e133a1636.woff2) format("woff2"),
-    url(fonts/721a921f734fb323f4caea89bdcde344.woff) format("woff");
+  src: url(assets/fonts/0f7dc50bd628fe0fc768282e133a1636.woff2) format("woff2"),
+    url(assets/fonts/721a921f734fb323f4caea89bdcde344.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 100;
-  src: url(fonts/8bbc3f1a918d7bc48c68fbc4166d0e72.woff2) format("woff2"),
-    url(fonts/f8fde952d66ebe9bf292f7a0e01d2e7f.woff) format("woff");
+  src: url(assets/fonts/8bbc3f1a918d7bc48c68fbc4166d0e72.woff2) format("woff2"),
+    url(assets/fonts/f8fde952d66ebe9bf292f7a0e01d2e7f.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 200;
-  src: url(fonts/8f1fd84676e17baee7526aca7b7748a9.woff2) format("woff2"),
-    url(fonts/b864298a48e27acba0a5a1b0911a58da.woff) format("woff");
+  src: url(assets/fonts/8f1fd84676e17baee7526aca7b7748a9.woff2) format("woff2"),
+    url(assets/fonts/b864298a48e27acba0a5a1b0911a58da.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 200;
-  src: url(fonts/7311d6c6dccbffd1e0ce02f8b1550ec4.woff2) format("woff2"),
-    url(fonts/52cc547dbbf09e2f0d334fc5e6dadff6.woff) format("woff");
+  src: url(assets/fonts/7311d6c6dccbffd1e0ce02f8b1550ec4.woff2) format("woff2"),
+    url(assets/fonts/52cc547dbbf09e2f0d334fc5e6dadff6.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 300;
-  src: url(fonts/b8eaadf08a711633a8652116fb4d677f.woff2) format("woff2"),
-    url(fonts/9f4db666777797d8fa03a1162ebdecb3.woff) format("woff");
+  src: url(assets/fonts/b8eaadf08a711633a8652116fb4d677f.woff2) format("woff2"),
+    url(assets/fonts/9f4db666777797d8fa03a1162ebdecb3.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 300;
-  src: url(fonts/2da0bb3fe5881c677f480c63cf0d8bfc.woff2) format("woff2"),
-    url(fonts/63b435f5ee8678081a346f95bf5556ee.woff) format("woff");
+  src: url(assets/fonts/2da0bb3fe5881c677f480c63cf0d8bfc.woff2) format("woff2"),
+    url(assets/fonts/63b435f5ee8678081a346f95bf5556ee.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(fonts/d55e957612a3b2a373925d920f4af6b1.woff2) format("woff2"),
-    url(fonts/1a7f90ff1f1ec75ed4e588736c6a81b0.woff) format("woff");
+  src: url(assets/fonts/d55e957612a3b2a373925d920f4af6b1.woff2) format("woff2"),
+    url(assets/fonts/1a7f90ff1f1ec75ed4e588736c6a81b0.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 400;
-  src: url(fonts/d6a4e2b82a0bbc1b827c9dbc504f61c6.woff2) format("woff2"),
-    url(fonts/fb463a63312e849abe41dde33c65f447.woff) format("woff");
+  src: url(assets/fonts/d6a4e2b82a0bbc1b827c9dbc504f61c6.woff2) format("woff2"),
+    url(assets/fonts/fb463a63312e849abe41dde33c65f447.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  src: url(fonts/000899d460b7eb798c2a9363b6bc5bae.woff2) format("woff2"),
-    url(fonts/3a88989de5b547ece113f22fa94e3857.woff) format("woff");
+  src: url(assets/fonts/000899d460b7eb798c2a9363b6bc5bae.woff2) format("woff2"),
+    url(assets/fonts/3a88989de5b547ece113f22fa94e3857.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 500;
-  src: url(fonts/605e3794d9adca3177ef72ba2d83c5a3.woff2) format("woff2"),
-    url(fonts/db2fc9f9bb6fd2a0756318a959446470.woff) format("woff");
+  src: url(assets/fonts/605e3794d9adca3177ef72ba2d83c5a3.woff2) format("woff2"),
+    url(assets/fonts/db2fc9f9bb6fd2a0756318a959446470.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  src: url(fonts/b818e3bac1b8e0d2d0c27641c164fe6d.woff2) format("woff2"),
-    url(fonts/aae7c5e18dcf4b346e3e6702c6a9293a.woff) format("woff");
+  src: url(assets/fonts/b818e3bac1b8e0d2d0c27641c164fe6d.woff2) format("woff2"),
+    url(assets/fonts/aae7c5e18dcf4b346e3e6702c6a9293a.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 600;
-  src: url(fonts/36ee38e3ee17ea6b36d8ceda24dedc87.woff2) format("woff2"),
-    url(fonts/d4c12e4043e569ccfa39d03536976d3c.woff) format("woff");
+  src: url(assets/fonts/36ee38e3ee17ea6b36d8ceda24dedc87.woff2) format("woff2"),
+    url(assets/fonts/d4c12e4043e569ccfa39d03536976d3c.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url(fonts/0564381b22b2c4760eb15bef0691993a.woff2) format("woff2"),
-    url(fonts/2767206dcd8daad63c6a24a5940df79e.woff) format("woff");
+  src: url(assets/fonts/0564381b22b2c4760eb15bef0691993a.woff2) format("woff2"),
+    url(assets/fonts/2767206dcd8daad63c6a24a5940df79e.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 700;
-  src: url(fonts/9d1b867e3416024c0ffe5a592ea0e090.woff2) format("woff2"),
-    url(fonts/d4f1ac27c3c139a63e07d23e4a05830d.woff) format("woff");
+  src: url(assets/fonts/9d1b867e3416024c0ffe5a592ea0e090.woff2) format("woff2"),
+    url(assets/fonts/d4f1ac27c3c139a63e07d23e4a05830d.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 800;
-  src: url(fonts/c497b387e49a22dec9a2af7dee83dec4.woff2) format("woff2"),
-    url(fonts/fedb8eda32eb5c4491bf632fff922656.woff) format("woff");
+  src: url(assets/fonts/c497b387e49a22dec9a2af7dee83dec4.woff2) format("woff2"),
+    url(assets/fonts/fedb8eda32eb5c4491bf632fff922656.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 800;
-  src: url(fonts/51884a9e8944240a6af558f0ab8cd863.woff2) format("woff2"),
-    url(fonts/dc6537846c82a3cf02058998cc148ec0.woff) format("woff");
+  src: url(assets/fonts/51884a9e8944240a6af558f0ab8cd863.woff2) format("woff2"),
+    url(assets/fonts/dc6537846c82a3cf02058998cc148ec0.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  src: url(fonts/b5dc0c807c348e87ddb0a3a0db163d39.woff2) format("woff2"),
-    url(fonts/bcb8ba483f01c7f5806e61e50e98a92c.woff) format("woff");
+  src: url(assets/fonts/b5dc0c807c348e87ddb0a3a0db163d39.woff2) format("woff2"),
+    url(assets/fonts/bcb8ba483f01c7f5806e61e50e98a92c.woff) format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 900;
-  src: url(fonts/971531638d4350b2ae5008b30cad59ba.woff2) format("woff2"),
-    url(fonts/d4bfe20e440f156bde467593fd607636.woff) format("woff");
+  src: url(assets/fonts/971531638d4350b2ae5008b30cad59ba.woff2) format("woff2"),
+    url(assets/fonts/d4bfe20e440f156bde467593fd607636.woff) format("woff");
 }
 /* -------------------------------------------------------
 Variable font.
@@ -11573,14 +11573,14 @@ Usage:
   font-weight: 100 900;
   font-style: normal;
   font-named-instance: "Regular";
-  src: url(fonts/878dfb144418ff226bf317482550c89f.woff2) format("woff2");
+  src: url(assets/fonts/878dfb144418ff226bf317482550c89f.woff2) format("woff2");
 }
 @font-face {
   font-family: "Inter var";
   font-weight: 100 900;
   font-style: italic;
   font-named-instance: "Italic";
-  src: url(fonts/5b9779adb2b452a6675d4d1f7de5d945.woff2) format("woff2");
+  src: url(assets/fonts/5b9779adb2b452a6675d4d1f7de5d945.woff2) format("woff2");
 }
 /* --------------------------------------------------------------------------
 [EXPERIMENTAL] Multi-axis, single variable font.
@@ -11599,7 +11599,7 @@ explicitly, e.g.
   font-family: "Inter var experimental";
   font-weight: 100 900;
   font-style: oblique 0deg 10deg;
-  src: url(fonts/b415f93967439009aac37c2378142054.woff2) format("woff2");
+  src: url(assets/fonts/b415f93967439009aac37c2378142054.woff2) format("woff2");
 }
 .o-1 {
   opacity: 0.1;

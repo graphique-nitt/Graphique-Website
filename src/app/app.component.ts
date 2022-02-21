@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { LoadingService } from './services/loading.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,11 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'graphique-website';
 
+  loading$ = this.loader.loading$;
 
+  constructor(private loader: LoadingService){
+    
+  }
     onActivate(event) {
       let scrollToTop = window.setInterval(() => {
           let pos = window.pageYOffset;
