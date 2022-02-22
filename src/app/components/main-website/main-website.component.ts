@@ -11,6 +11,14 @@ export class MainWebsiteComponent implements OnInit {
   constructor(private _router: Router) { }
   ngOnInit(): void {
     console.log('Hey there, lurker. %c Made with ❤️ by Hameed Ibrahim → https://hameedibrh.com & YLP → https://yagneshlp.me', 'background: black; color: white; padding: 1ch 2ch; border-radius: 2rem;');
+    if (navigator.userAgent.match(/samsung/i)) {
+      alert("You are using a defective browser (Samsung Internet) that " + 
+            "might not be configured to display this website properly. " +
+            "You should consider using a proper standards-compliant " + 
+            "browser instead. \n\n"+
+            "We recommend using Google Chrome, Firefox or Microsoft Edge \n\n" + "- Graphique.");
+            this._router.navigate(['r']);  }
+
 
   }
   

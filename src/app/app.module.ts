@@ -24,6 +24,8 @@ import { VerifyCertComponent } from './components/verify-cert/verify-cert.compon
 
 import { FormsModule } from '@angular/forms';
 import { NetworkInterceptor } from './network.interceptor';
+import { VerifyCertDirectComponent } from './components/verify-cert-direct/verify-cert-direct.component';
+import { RedirectForSamsungComponent } from './components/redirect-for-samsung/redirect-for-samsung.component';
 
 
 @NgModule({
@@ -40,7 +42,9 @@ import { NetworkInterceptor } from './network.interceptor';
     ContactComponent,
     MainWebsiteComponent,
     ErrorPageComponent,
-    VerifyCertComponent
+    VerifyCertComponent,
+    VerifyCertDirectComponent,
+    RedirectForSamsungComponent
   ],
   imports: [
     BrowserModule,

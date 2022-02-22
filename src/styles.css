@@ -1,5 +1,9 @@
 @charset "UTF-8";
+
 :root {
+  color-scheme: only;
+  forced-color-adjust: none;
+  print-color-adjust: exact;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;

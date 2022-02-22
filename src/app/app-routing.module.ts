@@ -11,6 +11,8 @@ import { ContactComponent } from './components/main-website/contact/contact.comp
 import { MainWebsiteComponent } from './components/main-website/main-website.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
 import { VerifyCertComponent } from './components/verify-cert/verify-cert.component';
+import { VerifyCertDirectComponent } from './components/verify-cert-direct/verify-cert-direct.component';
+import { RedirectForSamsungComponent } from './components/redirect-for-samsung/redirect-for-samsung.component';
 
 
 const routes: Routes = [
@@ -24,8 +26,10 @@ const routes: Routes = [
     {path: 'contact', component: ContactComponent},
     {path: 'contact/:id', component: ContactComponent},
     {path: 'verify', component: VerifyCertComponent},
+    { path: 'verify/:certID', component: VerifyCertDirectComponent},
     {path: '404', component: ErrorPageComponent}
     ]},
+    {path: 'r',  component: RedirectForSamsungComponent},
     {path: '**', redirectTo: '404'}
  
 ];
