@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { GoogleSheetsDbService } from 'ng-google-sheets-db';
+import { Certificate, certiAttributesMapping } from './certificate.model';
+import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders, HttpParams, HttpResponse } from '@angular/common/http'
 declare var require: any
 const FileSaver = require('file-saver');
@@ -12,47 +15,56 @@ const FileSaver = require('file-saver');
 export class VerifyCertDirectComponent implements OnInit{
 
   certID:any = ''
-  apiURL:any = "https://api.graphique.club/public/certificates"
-  certDetails = []
+  
   certificateImage : any = ''
   rollnumber = "";
-  createdOn = "";
   certImageLoaded: boolean = false;
   //stateManagers
   isSearching = false;
   isFileDownloading = false;
   isCertificateValid = false;
+  //
+  searchParam:any = ""
+
+  active = "no";
+  certificateid="";
+  name: string;
+  certimage: string;
+  certificates$: Observable<Certificate[]>;
+  certificate: any;
+  eventname:string;
 
 
-  constructor(private route: ActivatedRoute, private httpclient: HttpClient, private router: Router) { }
 
-  ngOnInit(): void {
+  constructor(private route: ActivatedRoute, private httpclient: HttpClient, private router: Router, private googleSheetsDbService: GoogleSheetsDbService) { }
+
+  async ngOnInit(): Promise<void> {
     this.certID = this.route.snapshot.paramMap.get('certID'); 
-    console.log(this.route.snapshot.paramMap.get('certID'))
-    console.log(this.certID)
+    await this.googleSheetsDbService.getActive<Certificate>(
+      '1C0UXdTKzVg1cvDZzoulxU1hcXDw_BGNdiMCHzE3Wg3M', 'Details', certiAttributesMapping, 'Active').toPromise().then(
+        res => {
+          this.certificate=res
+        }
+      );
     this.verifyCertificate();
   }
   
   verifyCertificate() {
-    this.isSearching = true
-    console.log("verify certificate called")
-    this.httpclient.get<any>(this.apiURL+"/getCertificateDetails/"+this.certID).subscribe(
-      (res) => {
+    for (let i=0; i<this.certificate.length; i++)
+    {
+      if(this.certID===this.certificate[i].certificateid)
+      {
         this.isCertificateValid = true;
-        this.isSearching= false;
-        console.log(res)
-        this.certDetails = res
-        this.rollnumber = res.rollNumber;
-        this.createdOn = res.createdOn
-        this.certificateImage = this.apiURL+"/getCertificateFile/"+ res.certificateImage
-        console.log(this.certificateImage)
-      },      
-      (err) => {
-        this.isCertificateValid = false;
-        this.isSearching= false;
-        console.log(err.error)
+        this.certificateImage = this.certificate[i].certimage;
+        this.name = this.certificate[i].name;
+        this.rollnumber = this.certificate[i].rollnumber;
+        this.eventname = this.certificate[i].eventname;
+
+        this.certImageLoadedHandler();
+
+
       }
-    );     
+    }
   }
 
   certImageLoadedHandler(){
@@ -62,13 +74,13 @@ export class VerifyCertDirectComponent implements OnInit{
 
   download(){    
     this.isFileDownloading = true;
-    this.httpclient.get<Blob>(this.apiURL+"/download/"+this.certID, {
+    this.httpclient.get<Blob>(this.certificateImage, {
       observe: 'response',
       responseType: 'blob' as 'json'
     }).subscribe(
       (res: HttpResponse<Blob>) => {
         console.log(res)
-        FileSaver.saveAs(res.body, this.certID);
+        FileSaver.saveAs(res.body, this.name + " - " +this.eventname);
         this.isFileDownloading = false;
       },      
       (err) => {

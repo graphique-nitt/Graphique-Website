@@ -45,13 +45,13 @@
                 <div class="loading"></div>
             </div>
             <div class="certificateContainer">
-                <img crossorigin="anonymous" id="certImg" [src]="certificateImage" ng-hide="certImageLoaded" (load)="certImageLoadedHandler()">
+                <img crossorigin="anonymous" id="certImg" [src]=certificateImage ng-hide="certImageLoaded" (load)="certImageLoadedHandler()">
             </div>
             
         </div> 
         <div class="details">
             <h2><fa-icon [icon]="['fas', 'check']" class="greeenCheck"></fa-icon>  This is a valid certificate. <img src="https://img.icons8.com/emoji/48/000000/check-mark-button-emoji.png"/></h2>
-            <p class="subtitle">This certificate was issued to {{rollnumber}} on {{createdOn}}</p>
+            <p class="subtitle">This certificate was issued to {{name}} ({{rollnumber}}) for {{eventname}}.</p>
             <div class="actions">
                 <div class="download">
                     <button [disabled]="isFileDownloading" (click)="download()"><fa-icon [icon]="['fas', 'download']"></fa-icon> Download</button>
