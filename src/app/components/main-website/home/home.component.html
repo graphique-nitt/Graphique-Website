@@ -273,10 +273,10 @@
       </div>
     </div>    <div class="row mx-0 pb-5" *ngIf="characters$ | async as characters; ">
       <div class="col-sm-4 col-6 px-0"  *ngFor="let character of characters" style="text-align: center; margin: 0 auto;">
-        <div  data-aos="fade-up" class="card bg-dark text-white hoverable" *ngIf="character.designation === 'President' || character.designation === 'Treasurer' || character.designation === 'Creative Director, Festember' || character.designation === 'Creative Director, Pragyan' || character.designation === 'General Secretary'" ><img class="card-img" alt={{character.name}} src={{character.photo}}>
+        <div  data-aos="fade-up" class="card bg-dark text-white hoverable" *ngIf="character.designation === 'President' || character.designation === 'Treasurer' || character.designation === 'Creative Director, Festember' || character.designation === 'Creative Director, Pragyan' || character.designation === 'Overall Coordinator'" ><img class="card-img" alt={{character.name}} src={{character.photo}}>
           <div class="card-img-overlay">
             <div class="card-title">
-              <div class="name">{{character.name}}</div>
+              <div class="name">{{character.name}}</div> 
               <div class="title">{{character.designation}}</div>
             </div>
           </div>

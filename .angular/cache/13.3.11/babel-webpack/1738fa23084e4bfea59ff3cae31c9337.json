@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const workshopAttributesMapping = {\n  id: 'Entry ID',\n  creatorname: 'Creator',\n  category: \"Category\",\n  artwork: 'Artwork',\n  prize: 'Prize'\n};","map":null,"metadata":{},"sourceType":"module"}

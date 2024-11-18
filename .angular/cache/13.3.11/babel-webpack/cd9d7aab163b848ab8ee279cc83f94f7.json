@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const certiAttributesMapping = {\n  active: \"Active\",\n  certificateid: \"Certificate ID\",\n  rollnumber: 'Roll Number',\n  name: 'Name',\n  certimage: 'Certificate Photo',\n  eventname: 'Event Name'\n};","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const alumniAttributesMapping = {\n  rollnumber: 'Roll Number',\n  name: 'Name',\n  designation: 'Designation',\n  about: \"About\",\n  photo: 'Photo',\n  instagram: \"Instagram\",\n  behance: \"Behance\",\n  linkedin: \"LinkedIn\",\n  website: \"Website\"\n};","map":null,"metadata":{},"sourceType":"module"}

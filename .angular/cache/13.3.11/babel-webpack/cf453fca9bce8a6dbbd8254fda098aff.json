@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const wallpaperAttributesMapping = {\n  id: 'Wallpaper ID',\n  wallpapername: 'Wallpaper Name',\n  creatorname: 'Creator',\n  username: \"Instagram Username\",\n  wallpaper: 'Wallpaper'\n};","map":null,"metadata":{},"sourceType":"module"}

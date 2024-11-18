@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const projectAttributesMapping = {\n  id: 'Project ID',\n  date: 'Project Date',\n  name: 'Project Name',\n  description: 'Project Description',\n  link: \"Project Link\",\n  cover: 'Project Cover'\n};","map":null,"metadata":{},"sourceType":"module"}
